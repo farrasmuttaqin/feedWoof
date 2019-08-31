@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#D1E2C4</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="circle">#D1E2C4</color>
+    <color name="background">#F0F3EE</color>
+    <color name="rectangle">#FFFFFF</color>
+    <color name="recButton">#555424</color>
+    <color name="twoh_primary">#FFFFFF</color>
+    <color name="colorNavigationText">#FFFFFF</color>
+</resources>

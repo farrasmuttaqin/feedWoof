@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FeedWoof</string>
+    <string name="forget"><b>Lupa Password? <font style="text-decoration: underline;">Klik Di sini</font></b></string>
+    <string name="daftar"><b><u>Daftar sekarang</u></b></string>
+
+    // TODO: 22/02/18
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="account">Account</string>
+</resources>
