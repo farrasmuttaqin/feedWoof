@@ -1,5 +1,6 @@
 package com.example.feedwoofs;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -37,4 +38,9 @@ public class SplashProfileBerhasil extends AppCompatActivity {
         };
         timer.start();
     }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed()
+    { }
 }

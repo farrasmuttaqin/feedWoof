@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -13,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +28,8 @@ public class HomeActivity2 extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_home2);
         super.onCreate(savedInstanceState);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         BottomNavigationView mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_home).setChecked(true);

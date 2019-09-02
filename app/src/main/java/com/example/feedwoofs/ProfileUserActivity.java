@@ -11,6 +11,7 @@ import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -28,6 +29,8 @@ public class ProfileUserActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_profile_user);
 
         super.onCreate(savedInstanceState);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_profile).setChecked(true);

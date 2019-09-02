@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ public class PesananActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_pesanan);
 
         super.onCreate(savedInstanceState);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_pesanan).setChecked(true);

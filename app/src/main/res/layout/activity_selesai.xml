@@ -7,249 +7,253 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <include layout="@layout/toolbar_main" />
-
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar2"
-        android:layout_marginTop="85dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:orientation="vertical"
-        android:layout_marginBottom="70dp">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:weightSum="10"
+        <include layout="@layout/toolbar_main" />
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp">
 
-            <TextView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/robotobold"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp"
-                android:text="Nama Ahli Pakan"
-                android:textSize="16dp" />
+                android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
+                    android:fontFamily="@font/robotobold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Nama Ahli Pakan"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
                         >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/minicircle" />
-
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:padding="10dp"
-                            android:layout_marginLeft="25dp"
-                            android:orientation="vertical">
+                            >
 
-                            <TextView
+                            <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:text="Nama Ahli"
-                                android:textSize="18dp"
-                                android:fontFamily="@font/robotobold"
-                                android:gravity="right" />
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/minicircle" />
 
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Ahli Pakan Sapi"
-                                android:fontFamily="@font/robotoregular"
-                                android:textStyle="bold"
-                                android:gravity="right" />
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Depok, Jawa Barat"
-                                android:fontFamily="@font/robotitalic"
-                                android:textStyle="bold"
-                                android:gravity="right" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Nama Ahli"
+                                    android:textSize="18dp"
+                                    android:fontFamily="@font/robotobold"
+                                    android:gravity="right" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Rp. 500.000"
-                                android:fontFamily="@font/robotobold"
-                                android:textStyle="bold"
-                                android:textSize="20dp"
-                                android:textColor="#853D25"
-                                android:layout_marginTop="15dp"
-                                android:gravity="right" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Ahli Pakan Sapi"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textStyle="bold"
+                                    android:gravity="right" />
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Depok, Jawa Barat"
+                                    android:fontFamily="@font/robotitalic"
+                                    android:textStyle="bold"
+                                    android:gravity="right" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Rp. 500.000"
+                                    android:fontFamily="@font/robotobold"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="#853D25"
+                                    android:layout_marginTop="15dp"
+                                    android:gravity="right" />
+
+                            </LinearLayout>
                         </LinearLayout>
+
                     </LinearLayout>
 
-                </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/robotobold"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="5dp"
-                android:text="Detail Pelatihan"
-                android:textSize="16dp" />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingTop="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingBottom="15dp"
-                    android:paddingRight="30dp">
+                    android:fontFamily="@font/robotobold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Detail Pelatihan"
+                    android:textSize="16dp" />
 
-                    <TextView
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Materi Pelatihan"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="14dp"
-                        android:textColor="#282120"/>
+                        android:orientation="vertical"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="30dp"
+                        android:paddingBottom="15dp"
+                        android:paddingRight="30dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Nama Ahli"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="14dp"
-                        android:textColor="#282120"
-                        android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Materi Pelatihan"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="14dp"
+                            android:textColor="#282120"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Tanggal Pelatihan"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="14dp"
-                        android:textColor="#282120"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Nama Ahli"
+                            android:fontFamily="@font/robotoregular"
+                            android:textSize="14dp"
+                            android:textColor="#282120"
+                            android:paddingTop="5dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="17/08/19"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="14dp"
-                        android:textColor="#282120"
-                        android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tanggal Pelatihan"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="14dp"
+                            android:textColor="#282120"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Alamat Pelatihan"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="14dp"
-                        android:textColor="#282120"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="17/08/19"
+                            android:fontFamily="@font/robotoregular"
+                            android:textSize="14dp"
+                            android:textColor="#282120"
+                            android:paddingTop="5dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Kampus Universitas Trilogi"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="14dp"
-                        android:textColor="#282120"
-                        android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Alamat Pelatihan"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="14dp"
+                            android:textColor="#282120"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Nomor Handphone"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="14dp"
-                        android:textColor="#282120"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Kampus Universitas Trilogi"
+                            android:fontFamily="@font/robotoregular"
+                            android:textSize="14dp"
+                            android:textColor="#282120"
+                            android:paddingTop="5dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="0812xxxxx"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="14dp"
-                        android:textColor="#282120"
-                        android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Nomor Handphone"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="14dp"
+                            android:textColor="#282120"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Harga"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/robotobold"
-                        android:textSize="14dp"
-                        android:textColor="#282120"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="0812xxxxx"
+                            android:fontFamily="@font/robotoregular"
+                            android:textSize="14dp"
+                            android:textColor="#282120"
+                            android:paddingTop="5dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Rp. 500.000,-"
-                        android:fontFamily="@font/robotoregular"
-                        android:textSize="14dp"
-                        android:textColor="#282120"
-                        android:paddingTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Harga"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/robotobold"
+                            android:textSize="14dp"
+                            android:textColor="#282120"/>
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Rp. 500.000,-"
+                            android:fontFamily="@font/robotoregular"
+                            android:textSize="14dp"
+                            android:textColor="#282120"
+                            android:paddingTop="5dp"/>
 
-            </android.support.v7.widget.CardView>
+                    </LinearLayout>
 
-        </LinearLayout>
+                </android.support.v7.widget.CardView>
 
-    </ScrollView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:weightSum="1"
         android:gravity="bottom">
 
         <Button
@@ -258,7 +262,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/rectanglebutton"
             android:fontFamily="@font/robotoregular"
             android:text="Selesai Pelatihan"

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -24,6 +25,9 @@ public class SelesaiActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_selesai);
 
         super.onCreate(savedInstanceState);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         toolbar = (Toolbar) findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Daftar Pelatihan");
@@ -46,9 +50,4 @@ public class SelesaiActivity extends AppCompatActivity  {
         Intent intent = new Intent(this,SplashPelatihanSelesai.class);
         startActivity(intent);
     }
-
-    @SuppressLint("MissingSuperCall")
-    @Override
-    public void onBackPressed()
-    { }
 }

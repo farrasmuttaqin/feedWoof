@@ -103,7 +103,7 @@
         <activity
             android:theme="@style/AppTheme2"
             android:name="com.example.feedwoofs.PesananSudahDibayar"
-            android:parentActivityName=".ListAhliPakanActivity" >
+            android:parentActivityName=".PesananActivity" >
 
         </activity>
 

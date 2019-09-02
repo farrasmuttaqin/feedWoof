@@ -7,107 +7,38 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <include layout="@layout/toolbar_main" />
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar2"
-        android:layout_marginTop="85dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:orientation="vertical"
-        android:layout_marginBottom="70dp">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:weightSum="10"
+        <include layout="@layout/toolbar_main" />
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
+                android:paddingBottom="60dp">
 
-                <LinearLayout
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="10dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/minicircle" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:layout_marginLeft="25dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Mega Melati"
-                                android:textSize="18dp"
-                                android:fontFamily="@font/robotobold"
-                                android:gravity="right" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Peternak Sapi"
-                                android:fontFamily="@font/robotoregular"
-                                android:textStyle="bold"
-                                android:gravity="right" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Depok, Jawa Barat"
-                                android:fontFamily="@font/robotitalic"
-                                android:textStyle="bold"
-                                android:gravity="right" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
-
-                <LinearLayout
-                    android:id="@+id/profile_anda"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="15dp">
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -115,21 +46,161 @@
                         android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
                             android:orientation="horizontal"
-                            android:paddingLeft="30dp">
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/ic_profile"
-                                android:paddingTop="5dp"/>
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/minicircle" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Mega Melati"
+                                    android:textSize="18dp"
+                                    android:fontFamily="@font/robotobold"
+                                    android:gravity="right" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Peternak Sapi"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textStyle="bold"
+                                    android:gravity="right" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Depok, Jawa Barat"
+                                    android:fontFamily="@font/robotitalic"
+                                    android:textStyle="bold"
+                                    android:gravity="right" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
+
+                    <LinearLayout
+                        android:id="@+id/profile_anda"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical">
+                                android:orientation="horizontal"
+                                android:paddingLeft="30dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_profile"
+                                    android:paddingTop="5dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Profil Anda"
+                                        android:paddingLeft="30dp"
+                                        android:fontFamily="@font/robotobold"
+                                        android:textSize="14dp"
+                                        android:textColor="#282120"
+                                        android:paddingTop="5dp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Atur Profil Anda"
+                                        android:paddingLeft="30dp"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:textSize="12dp"
+                                        android:textColor="#282120"
+                                        android:paddingTop="5dp"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="30dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_profile"
+                                    android:paddingTop="5dp"/>
+
 
                                 <TextView
                                     android:layout_width="match_parent"
@@ -141,239 +212,174 @@
                                     android:textColor="#282120"
                                     android:paddingTop="5dp"/>
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Atur Profil Anda"
-                                    android:paddingLeft="30dp"
-                                    android:fontFamily="@font/robotoregular"
-                                    android:textSize="12dp"
-                                    android:textColor="#282120"
-                                    android:paddingTop="5dp"/>
+
+
 
 
                             </LinearLayout>
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/darker_gray"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="30dp"
+                                android:paddingTop="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_lock"
+                                    android:paddingTop="5dp"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kebijakan Privasi"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotobold"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/darker_gray"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="30dp"
+                                android:paddingTop="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_local_phone"
+                                    android:paddingTop="5dp"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hubungi Kami"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotobold"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+
+
+
+                            </LinearLayout>
+
+
+
                         </LinearLayout>
+
 
                     </LinearLayout>
 
+                </android.support.v7.widget.CardView>
 
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
-
-                <LinearLayout
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="15dp">
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="11dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:padding="15dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingLeft="30dp">
+                            android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_profile"
-                                android:paddingTop="5dp"/>
-
-
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Profil Anda"
-                                android:paddingLeft="30dp"
-                                android:fontFamily="@font/robotobold"
-                                android:textSize="14dp"
-                                android:textColor="#282120"
-                                android:paddingTop="5dp"/>
+                                android:orientation="horizontal"
+                                android:paddingLeft="30dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_exit"
+                                    android:paddingTop="5dp"/>
 
 
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Keluar"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotobold"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+
+
+
+                            </LinearLayout>
 
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="10dp">
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray"/>
-
-                    </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingLeft="30dp"
-                            android:paddingTop="10dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_lock"
-                                android:paddingTop="5dp"/>
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Kebijakan Privasi"
-                                android:paddingLeft="30dp"
-                                android:fontFamily="@font/robotobold"
-                                android:textSize="14dp"
-                                android:textColor="#282120"
-                                android:paddingTop="5dp"/>
-
-
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingTop="10dp">
-
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="1dp"
-                                android:background="@android:color/darker_gray"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingLeft="30dp"
-                            android:paddingTop="10dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_local_phone"
-                                android:paddingTop="5dp"/>
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Hubungi Kami"
-                                android:paddingLeft="30dp"
-                                android:fontFamily="@font/robotobold"
-                                android:textSize="14dp"
-                                android:textColor="#282120"
-                                android:paddingTop="5dp"/>
-
-
-
-
-
-                        </LinearLayout>
-
 
 
                     </LinearLayout>
 
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/rectangle"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true"
-                android:layout_marginLeft="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_marginBottom="11dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="15dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingLeft="30dp">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_exit"
-                                android:paddingTop="5dp"/>
+                </android.support.v7.widget.CardView>
 
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Keluar"
-                                android:paddingLeft="30dp"
-                                android:fontFamily="@font/robotobold"
-                                android:textSize="14dp"
-                                android:textColor="#282120"
-                                android:paddingTop="5dp"/>
+            </LinearLayout>
 
 
+        </ScrollView>
 
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-        </LinearLayout>
-
-
-    </ScrollView>
+    </LinearLayout>
 
     <include layout="@layout/bottom_navigation_view"/>
 

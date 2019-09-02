@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -21,9 +22,12 @@ public class ListAhliPakanActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_list_ahlipakan);
+        super.onCreate(savedInstanceState);
 
         BottomNavigationView mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_home).setChecked(true);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.btm_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,8 +50,6 @@ public class ListAhliPakanActivity extends AppCompatActivity  {
                 return true;
             }
         });
-
-        super.onCreate(savedInstanceState);
 
         detil = (Button) findViewById(R.id.detil);
         detil.setOnClickListener(new View.OnClickListener() {
