@@ -51,7 +51,7 @@ public class DataDiriUserActivity extends AppCompatActivity  {
                         openPesanan();
                         break;
                     case R.id.action_profile :
-                        openProfile();
+//                        openProfile();
                         break;
                 }
 
@@ -79,7 +79,7 @@ public class DataDiriUserActivity extends AppCompatActivity  {
     }
 
     protected void openBeranda(){
-        Intent intent = new Intent(this,HomeActivity2.class);
+        Intent intent = new Intent(this,HomeActivity1.class);
         startActivity(intent);
     }
 

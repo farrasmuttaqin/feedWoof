@@ -51,7 +51,7 @@ public class UbahDataDiriActivity extends AppCompatActivity  {
                         openPesanan();
                         break;
                     case R.id.action_profile :
-                        openProfile();
+//                        openProfile();
                         break;
                 }
 
@@ -79,8 +79,11 @@ public class UbahDataDiriActivity extends AppCompatActivity  {
     }
 
     protected void openBeranda(){
-        Intent intent = new Intent(this,HomeActivity2.class);
+        Intent intent = new Intent(this,HomeActivity1.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 
     protected void simpanProfile(){
@@ -90,6 +93,9 @@ public class UbahDataDiriActivity extends AppCompatActivity  {
 
     protected void openPesanan(){
         Intent intent = new Intent(this,PesananActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 }

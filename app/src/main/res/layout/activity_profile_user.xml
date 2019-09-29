@@ -53,9 +53,9 @@
                             android:padding="10dp">
 
                             <ImageView
+                                android:id="@+id/myAvatar"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/minicircle" />
+                                android:layout_height="wrap_content" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -65,6 +65,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/myName"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:text="Mega Melati"
@@ -81,6 +82,7 @@
                                     android:gravity="right" />
 
                                 <TextView
+                                    android:id="@+id/myAddress"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:text="Depok, Jawa Barat"
@@ -314,6 +316,7 @@
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/logout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/rectangle"
@@ -355,7 +358,7 @@
                                     android:paddingLeft="30dp"
                                     android:fontFamily="@font/robotobold"
                                     android:textSize="14dp"
-                                    android:textColor="#282120"
+                                    android:textColor="@color/colorAccent"
                                     android:paddingTop="5dp"/>
 
 

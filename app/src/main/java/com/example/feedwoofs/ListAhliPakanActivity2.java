@@ -4,35 +4,33 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toast;
 
-public class HomeActivity2 extends AppCompatActivity  {
+public class ListAhliPakanActivity2 extends AppCompatActivity  {
 
     private BottomNavigationView bottomNavigationView;
     private Toolbar toolbar;
-    private CardView card1;
-    TextView smsCountTxt;
-    int pendingSMSCount = 10;
-    private boolean doubleBackToExitPressedOnce;
+    private Button chat,detil, order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_home2);
+        setContentView(R.layout.activity_list_ahlipakan2);
         super.onCreate(savedInstanceState);
-
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         BottomNavigationView mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_home).setChecked(true);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.btm_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -56,41 +54,51 @@ public class HomeActivity2 extends AppCompatActivity  {
             }
         });
 
-        card1 = (CardView) findViewById(R.id.card1);
-        card1.setOnClickListener(new View.OnClickListener() {
+        detil = (Button) findViewById(R.id.detil);
+        detil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCard();
+                openDetail();
             }
         });
+
+        chat = (Button) findViewById(R.id.chat);
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openChat();
+            }
+        });
+
+        order = (Button) findViewById(R.id.order1);
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOrder();
+            }
+        });
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-
-            case R.id.action_pesanan: {
-
-                return true;
-            }
-        }
-        return super.onOptionsItemSelected(item);
+    protected void openChat(){
+        Intent intent = new Intent(this,ChatActivity2.class);
+        startActivity(intent);
     }
 
-
-    protected void openCard(){
-        Intent intent = new Intent(this,ListAhliPakanActivity2.class);
+    protected void openDetail(){
+        Intent intent = new Intent(this,ProfileActivity2.class);
         startActivity(intent);
     }
 
     protected void openProfile(){
-        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "homeActivity2");
+        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "listAhliPakanActivity2");
         startActivity(intent);
     }
 
@@ -99,14 +107,19 @@ public class HomeActivity2 extends AppCompatActivity  {
         startActivity(intent);
     }
 
+    protected void openOrder(){
+        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "listAhliPakanActivity2");
+        startActivity(intent);
+    }
+
     protected void openPesanan(){
-        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "homeActivity2");
+        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "listAhliPakanActivity2");
         startActivity(intent);
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,HomeActivity2.class);
         startActivity(intent);
     }
 }

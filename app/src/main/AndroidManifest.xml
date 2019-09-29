@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.feedwoofs">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,15 +15,22 @@
         android:theme="@style/AppTheme">
 
         <activity android:name="com.example.feedwoofs.MainActivity">
+
+        </activity>
+        <activity android:theme="@style/AppTheme2"
+            android:name="com.example.feedwoofs.RegisterActivity"
+            android:parentActivityName="com.example.feedwoofs.MainActivity" >
+
+        </activity>
+
+        <activity
+            android:name="com.example.feedwoofs.HomeActivity1" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:theme="@style/AppTheme2"
-            android:name="com.example.feedwoofs.RegisterActivity"
-            android:parentActivityName="com.example.feedwoofs.MainActivity" >
 
         </activity>
         <activity
@@ -30,6 +41,12 @@
 
         <activity
             android:name="com.example.feedwoofs.ListAhliPakanActivity"
+            android:parentActivityName="com.example.feedwoofs.HomeActivity1" >
+
+        </activity>
+
+        <activity
+            android:name="com.example.feedwoofs.ListAhliPakanActivity2"
             android:parentActivityName="com.example.feedwoofs.HomeActivity2" >
 
         </activity>
@@ -39,11 +56,23 @@
             android:parentActivityName="com.example.feedwoofs.ListAhliPakanActivity" >
 
         </activity>
+        <activity
+            android:name="com.example.feedwoofs.ChatActivity2"
+            android:parentActivityName="com.example.feedwoofs.ListAhliPakanActivity2" >
+
+        </activity>
 
         <activity
             android:theme="@style/AppTheme3"
             android:name="com.example.feedwoofs.ProfileActivity"
             android:parentActivityName="com.example.feedwoofs.ListAhliPakanActivity" >
+
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme3"
+            android:name="com.example.feedwoofs.ProfileActivity2"
+            android:parentActivityName="com.example.feedwoofs.ListAhliPakanActivity2" >
 
         </activity>
 
@@ -110,6 +139,8 @@
         <activity android:name=".SplashPelatihan" android:noHistory="true" />
         <activity android:name=".SplashPelatihanSelesai" android:noHistory="true" />
         <activity android:name=".SplashProfileBerhasil"  android:noHistory="true"/>
+        <activity android:name=".Splash"  android:noHistory="true"/>
+        <activity android:name=".WarningActivity" android:noHistory="true"/>
     </application>
 
 </manifest>

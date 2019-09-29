@@ -15,7 +15,9 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class HomeActivity2 extends AppCompatActivity  {
+import java.util.HashMap;
+
+public class HomeActivity1 extends AppCompatActivity  {
 
     private BottomNavigationView bottomNavigationView;
     private Toolbar toolbar;
@@ -24,15 +26,27 @@ public class HomeActivity2 extends AppCompatActivity  {
     int pendingSMSCount = 10;
     private boolean doubleBackToExitPressedOnce;
 
+    SessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_home2);
+        setContentView(R.layout.activity_home1);
         super.onCreate(savedInstanceState);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         BottomNavigationView mBtmView = (BottomNavigationView) findViewById(R.id.btm_nav);
         mBtmView.getMenu().findItem(R.id.action_home).setChecked(true);
+
+        sessionManager = new SessionManager(this);
+        sessionManager.checkLogin();
+        HashMap<String,String> user = sessionManager.getUserDetail();
+        String id_user = user.get(sessionManager.ID_USER);
+        String namaRegister =user.get(sessionManager.FULLNAME);
+        String emailRegister =user.get(sessionManager.EMAIL);
+        String alamatRegister =user.get(sessionManager.ADDRESS);
+        String phoneRegister =user.get(sessionManager.PHONE);
+        String avatar =user.get(sessionManager.AVATAR);
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.btm_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -83,30 +97,66 @@ public class HomeActivity2 extends AppCompatActivity  {
         return super.onOptionsItemSelected(item);
     }
 
+    private void setupBadge() {
+
+        if (smsCountTxt != null) {
+            if (pendingSMSCount == 0) {
+                if (smsCountTxt.getVisibility() != View.GONE) {
+                    smsCountTxt.setVisibility(View.GONE);
+                }
+            } else {
+                smsCountTxt.setText(String.valueOf(Math.min(pendingSMSCount, 99)));
+                if (smsCountTxt.getVisibility() != View.VISIBLE) {
+                    smsCountTxt.setVisibility(View.VISIBLE);
+                }
+            }
+        }
+    }
 
     protected void openCard(){
-        Intent intent = new Intent(this,ListAhliPakanActivity2.class);
+        Intent intent = new Intent(this,ListAhliPakanActivity.class);
         startActivity(intent);
     }
 
     protected void openProfile(){
-        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "homeActivity2");
+        Intent intent = new Intent(this,ProfileUserActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 
     protected void openBeranda(){
-        Intent intent = new Intent(this,HomeActivity2.class);
+        Intent intent = new Intent(this,HomeActivity1.class);
         startActivity(intent);
     }
 
     protected void openPesanan(){
-        Intent intent = new Intent(this, WarningActivity.class).putExtra("from", "homeActivity2");
+        Intent intent = new Intent(this,PesananActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
+
+        if (doubleBackToExitPressedOnce) {
+            finishAffinity();
+            finish();
+        }
+
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click back again to exit from Feed Woof", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }

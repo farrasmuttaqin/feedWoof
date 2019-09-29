@@ -43,7 +43,7 @@ public class PesananActivity extends AppCompatActivity  {
                         openBeranda();
                         break;
                     case R.id.action_pesanan :
-                        openPesanan();
+//                        openPesanan();
                         break;
                     case R.id.action_profile :
                         openProfile();
@@ -87,12 +87,19 @@ public class PesananActivity extends AppCompatActivity  {
 
     protected void openProfile(){
         Intent intent = new Intent(this,ProfileUserActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 
     protected void openBeranda(){
-        Intent intent = new Intent(this,HomeActivity2.class);
+        Intent intent = new Intent(this,HomeActivity1.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
+
     }
 
     protected void openPesanan(){
@@ -117,7 +124,7 @@ public class PesananActivity extends AppCompatActivity  {
 
     @Override
     public void onBackPressed() {
-        Intent setIntent = new Intent(this,HomeActivity2.class);
+        Intent setIntent = new Intent(this,HomeActivity1.class);
         setIntent.addCategory(Intent.CATEGORY_HOME);
         setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(setIntent);

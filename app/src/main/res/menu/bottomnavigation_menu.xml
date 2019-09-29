@@ -10,7 +10,7 @@
     <item
         android:id="@+id/action_pesanan"
         android:icon="@drawable/ic_pesanan"
-        android:title="Notification"
+        android:title="Pesanan"
         android:enabled="true"
         app:showAsAction="always"/>
     <item

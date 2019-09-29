@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/minicircle" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Nama Ahli"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/robotobold"
+                                android:gravity="right" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Ahli Pakan Sapi"
+                                android:fontFamily="@font/robotoregular"
+                                android:textStyle="bold"
+                                android:gravity="right" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Depok, Jawa Barat"
+                                android:fontFamily="@font/robotitalic"
+                                android:textStyle="bold"
+                                android:gravity="right" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Rp. 500.000"
+                                android:fontFamily="@font/robotobold"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#853D25"
+                                android:layout_marginTop="15dp"
+                                android:gravity="right" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Profil"
+                android:fontFamily="@font/robotobold"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nama Lengkap"
+                        android:fontFamily="@font/robotobold"
+                        android:textSize="14dp"
+                        android:textColor="#282120"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nama Ahli"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="14dp"
+                        android:textColor="#282120"
+                        android:paddingTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Riwayat Pendidikan"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/robotobold"
+                        android:textSize="14dp"
+                        android:textColor="#282120"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="S1"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="14dp"
+                        android:textColor="#282120"
+                        android:paddingTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="S2"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="14dp"
+                        android:textColor="#282120"
+                        android:paddingTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="S3"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="14dp"
+                        android:textColor="#282120"
+                        android:paddingTop="5dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Riwayat Pelatihan"
+                android:fontFamily="@font/robotobold"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pelatihan Pakan Ternak"
+                        android:fontFamily="@font/robotobold"
+                        android:textSize="14dp"
+                        android:textColor="#282120"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="2015"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="14dp"
+                                android:textColor="#282120"
+                                android:paddingTop="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 1"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 2"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 3"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="2015"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="14dp"
+                                android:textColor="#282120"
+                                android:paddingTop="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 1"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 2"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 3"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="2015"
+                                android:fontFamily="@font/robotoregular"
+                                android:textSize="14dp"
+                                android:textColor="#282120"
+                                android:paddingTop="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 1"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 2"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pelatihan 3"
+                                    android:paddingLeft="30dp"
+                                    android:fontFamily="@font/robotoregular"
+                                    android:textSize="14dp"
+                                    android:textColor="#282120"
+                                    android:paddingTop="5dp"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebutton"
+            android:fontFamily="@font/robotoregular"
+            android:text="Chat dengan ahli pakan"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

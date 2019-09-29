@@ -54,10 +54,18 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/robotoregular"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:textSize="12dp" />
 
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <Button
-                android:id="@+id/masuk"
+                android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"

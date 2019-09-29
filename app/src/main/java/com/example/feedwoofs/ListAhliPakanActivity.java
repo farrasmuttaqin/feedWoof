@@ -37,7 +37,7 @@ public class ListAhliPakanActivity extends AppCompatActivity  {
 
                 switch (item.getItemId()){
                     case R.id.action_home :
-                        openBeranda();
+//                        openBeranda();
                         break;
                     case R.id.action_pesanan :
                         openPesanan();
@@ -96,7 +96,10 @@ public class ListAhliPakanActivity extends AppCompatActivity  {
 
     protected void openProfile(){
         Intent intent = new Intent(ListAhliPakanActivity.this,ProfileUserActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 
     protected void openBeranda(){
@@ -111,6 +114,9 @@ public class ListAhliPakanActivity extends AppCompatActivity  {
 
     protected void openPesanan(){
         Intent intent = new Intent(this,PesananActivity.class);
+        finish();
+        overridePendingTransition( 0, 0);
         startActivity(intent);
+        overridePendingTransition( 0, 0);
     }
 }

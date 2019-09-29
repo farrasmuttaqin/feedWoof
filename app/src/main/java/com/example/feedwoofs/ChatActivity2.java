@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-public class ChatActivity extends AppCompatActivity  {
+public class ChatActivity2 extends AppCompatActivity  {
 
     private BottomNavigationView bottomNavigationView;
     private Toolbar toolbar;
@@ -19,7 +19,7 @@ public class ChatActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.activity_chat2);
         super.onCreate(savedInstanceState);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
@@ -40,7 +40,7 @@ public class ChatActivity extends AppCompatActivity  {
     }
 
     private void back(){
-        Intent intent = new Intent(this,ListAhliPakanActivity.class);
+        Intent intent = new Intent(this,ListAhliPakanActivity2.class);
         startActivity(intent);
     }
 }
